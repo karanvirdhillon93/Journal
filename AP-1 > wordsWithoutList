@@ -1,0 +1,10 @@
+public List wordsWithoutList(String[] words, int len) {
+//loop and if not equal add
+List<String> result=new ArrayList<String>();
+for(String n:words){
+  if(n.length()!=len){
+    result.add(n);
+  }
+}
+return result;
+}
