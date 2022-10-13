@@ -1,0 +1,5 @@
+public boolean hasOne(int n) {
+  String num=String.valueOf(n);
+  if(num.contains("1")) return true;
+  else return false;
+}
