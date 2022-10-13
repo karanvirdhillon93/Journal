@@ -1,0 +1,14 @@
+public int scoresAverage(int[] scores) {
+  int lefthalf=0;
+  int righthalf=0;
+  
+  for(int i=0;i<scores.length/2;i++){
+    lefthalf+=scores[i];
+  }
+  
+    for(int i=scores.length/2;i<scores.length;i++){
+    righthalf+=scores[i];
+  }
+  
+  return Math.max(lefthalf,righthalf);
+}
