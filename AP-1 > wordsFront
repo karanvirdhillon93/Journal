@@ -1,0 +1,15 @@
+public String[] wordsFront(String[] words, int n) {
+
+  ArrayList<String> al= new ArrayList<String>();
+  for(int i=0;i<words.length;i++){
+    String val=Character.toString(words[i].charAt(n-1));
+    al.add(val);
+  }
+  String[] result=new String[al.size()];
+  
+
+ for(int i=0;i<al.size();i++){
+   result[i]=al.get(i);
+ }
+ return result;
+}
