@@ -1,0 +1,23 @@
+public String[] wordsWithout(String[] words, String target) {
+  int result=0;
+  for(String n: words){
+    if(n.equals(target)){
+      continue;
+    }
+    else{
+      result++;
+    }
+  }
+  String[] resultArray= new String[result];
+  int pos=0;
+  for(int i=0;i<words.length;i++){
+    if(words[i].equals(target)){
+      continue;
+    }
+    else if (words[i]!=target){
+      resultArray[pos]=words[i];
+      pos++;
+    }
+  }
+  return resultArray;
+}
